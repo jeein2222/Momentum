@@ -1,1 +1,1 @@
-source:f1.txt
+source:f1.txt*
