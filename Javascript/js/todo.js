@@ -39,14 +39,18 @@ function handleToDoSubmit(event){
     event.preventDefault()
     const newTodo=toDoInput.value
     toDoInput.value="";
-    const newTodoObj={
-        text:newTodo,
-        id:Date.now()
+    if(toDos.length<=13){
+        const newTodoObj={
+            text:newTodo,
+            id:Date.now()
+        }
+        toDos.push(newTodoObj)
+        paintToDo(newTodoObj)
+        saveToDos()
     }
-    toDos.push(newTodoObj)
-    paintToDo(newTodoObj)
-    saveToDos()
-
+    else{
+        alert("To much todo!")
+    }
 }
 
 toDoForm.addEventListener("submit",handleToDoSubmit)

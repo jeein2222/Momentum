@@ -1,27 +1,27 @@
 const quotes=[
     {
-        quote:"삶이 있는 한 희망은 있다",
-        author:"키케로"
+        quote:"When you go through hardships and decide not to surrender, that is strength.",
+        author:"Arnold Schwarzenegger"
     },
     {
-        quote:"산다는것 그것은 치열한 전투이다.",
-        author:"로랑로랑"
+        quote:"It is kind of fun to do the impossible.",
+        author:"Walt Disney"
     },
     {
-        quote:"하루에 3시간을 걸으면 7년 후에 지구를 한바퀴 돌 수 있다." ,
-        author:"사무엘존슨"
+        quote:"There are better starters than me but I’m a strong finisher." ,
+        author:" Usain Bolt"
     },
     {
-        quote:"언제나 현재에 집중할수 있다면 행복할것이다.",
-        author:"파울로 코엘료"
+        quote:"Tough times never last, but tough people do.",
+        author:"Robert H. Schuller"
     },
     {
-        quote:"진정으로 웃으려면 고통을 참아야하며 , 나아가 고통을 즐길 줄 알아야 해",
-        author:"찰리 채플린"
+        quote:"I’ve failed over and over and over again in my life and that is why I succeed.",
+        author:"Michael"
     },
     {
-        quote:"직업에서 행복을 찾아라. 아니면 행복이 무엇인지 절대 모를 것이다",
-        author:"엘버트 허버드"
+        quote:"If you don’t get out of the box you’ve been raised in, you won’t understand how much bigger the world is.",
+        author:"Angelina Jolie"
     },
 ]
 
@@ -32,4 +32,4 @@ const author=document.querySelector("#quote span:last-child")
 const todaysQuote=quotes[Math.floor(Math.random()*quotes.length)]
 
 quote.innerText=todaysQuote.quote
-author.innerText=todaysQuote.author
+author.innerText="-"+todaysQuote.author
