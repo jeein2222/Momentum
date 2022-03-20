@@ -22,9 +22,8 @@ const quotes=[
     {
         quote:"If you don’t get out of the box you’ve been raised in, you won’t understand how much bigger the world is.",
         author:"Angelina Jolie"
-    },
+    }
 ]
-
 
 const quote=document.querySelector("#quote span:first-child")
 const author=document.querySelector("#quote span:last-child")

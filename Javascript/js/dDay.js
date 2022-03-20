@@ -12,7 +12,6 @@ function getClock() {
   const seconds = Math.floor(gap % (1000 * 60)/1000);
 
   clockTitle.innerHTML=` ${days}days ${hours}hours ${minutes}min ${seconds}sec left...😂`
-
 }
 
 getClock();
